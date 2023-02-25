@@ -6,7 +6,7 @@
 Input: 5
 Output: 6
 '''
-num = int(input("введите число: "))
+num = int(input("Введите число: "))
 
 fib1 = 0
 fib2 = 1
