@@ -21,7 +21,7 @@ while x:
         print(f"Число {num} находится на позиции {2}")
         x = False
     elif fib > num:
-        print("Нет числа")
+        print(-1)
         x = False
     elif fib == num:
         print(f"Число {num} находится на позиции {i}")
