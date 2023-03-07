@@ -20,7 +20,7 @@ if len(blueberry_bushes) == 3:
 elif len(blueberry_bushes) > 3:
     for i in range(2, len(blueberry_bushes) - 1):
         maximum = rez
-        rez = blueberry_bushes[i - 1] + blueberry_bushes[i] + blueberry_bushes[+ 1]
+        rez = blueberry_bushes[i - 1] + blueberry_bushes[i] + blueberry_bushes[i + 1]
         if rez > maximum:
             maximum = rez
 print(maximum)
