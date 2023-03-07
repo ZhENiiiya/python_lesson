@@ -14,13 +14,28 @@
 
 blueberry_bushes = [3, 6, 7, 9, 2, 10]
 rez = 0
+maximum = 0
 if len(blueberry_bushes) == 3:
     for i in blueberry_bushes:
         rez += i
 elif len(blueberry_bushes) > 3:
     for i in range(2, len(blueberry_bushes) - 1):
-        maximum = rez
         rez = blueberry_bushes[i - 1] + blueberry_bushes[i] + blueberry_bushes[i + 1]
+        if rez > maximum:
+            maximum = rez
+print(maximum)
+
+#########################################
+# Правильный вариант ####################
+blueberry_bushes = [12, 6, 7, 9, 10, 10]
+rez = 0
+maximum = 0
+if len(blueberry_bushes) == 3:
+    for i in blueberry_bushes:
+        rez += i
+elif len(blueberry_bushes) > 3:
+    for i in range(len(blueberry_bushes)):
+        rez = blueberry_bushes[i - 2] + blueberry_bushes[i - 1] + blueberry_bushes[i]
         if rez > maximum:
             maximum = rez
 print(maximum)
