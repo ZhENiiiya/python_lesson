@@ -17,8 +17,9 @@ for i in range(n):
 print(f"Заполните первое множество: {m} - элементов")
 for i in range(m):
     set_2.add(int(input("-> ")))
-
-all_set = set_1.union(set_2)
+# Правильно так
+#VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+all_set = set_1.intersection(set_2) # Было all_set = set_1.union(set_2)
 
 list_1 = list(all_set)
 list_1.sort()
